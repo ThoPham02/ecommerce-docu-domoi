@@ -1,0 +1,15 @@
+.product-item {
+  text-decoration: none;
+  color: black;
+  margin: 6px 6px;
+  width: calc(20% - 12px);
+  position: relative;
+}
+
+.product-item a {
+  text-decoration: none;
+  color: black;
+  margin: 6px 6px;
+  width: calc(20% - 12px);
+}
+

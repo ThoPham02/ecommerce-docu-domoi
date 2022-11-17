@@ -2,7 +2,7 @@ const productsDB = [
   {
     id: 1,
     name: "Samsung A33 Hàng cty",
-    imgUrl: "images/product/1.jpg",
+    imgUrl: "images/products/1.jpg",
     price: 4100000,
     discription: "Máy zin",
     address: "Nam Từ Liêm",
@@ -11,7 +11,7 @@ const productsDB = [
   {
     id: 2,
     name: "IPhone 7Plus 128GB",
-    imgUrl: "images/product/2.jpg",
+    imgUrl: "images/products/2.jpg",
     price: 2500000,
     discription: "Máy đẹp zin pin 90%",
     address: "Nam Từ Liêm",
@@ -20,7 +20,7 @@ const productsDB = [
   {
     id: 3,
     name: "Iphone 11 pro",
-    imgUrl: "images/product/3.jpg",
+    imgUrl: "images/products/3.jpg",
     price: 9900000,
     discription: "màu trắng zin đẹp pin 94%",
     address: "",
@@ -29,7 +29,7 @@ const productsDB = [
   {
     id: 4,
     name: "Iphone XSM",
-    imgUrl: "images/product/4.jpg",
+    imgUrl: "images/products/4.jpg",
     price: 4500000,
     discription: "lock face đầy đủ pin zin 84%",
     address: "",
@@ -38,7 +38,7 @@ const productsDB = [
   {
     id: 5,
     name: "Iphone 7",
-    imgUrl: "images/product/5.jpg",
+    imgUrl: "images/products/5.jpg",
     price: 2300000,
     discription:
       "Màu Vàng , vỏ đẹp , bộ nhớ 128gb , Pin 100% về chỉ viêc cắm sim dùng có sạc",
@@ -48,7 +48,7 @@ const productsDB = [
   {
     id: 6,
     name: "RAM 8GB 2666 ",
-    imgUrl: "images/product/6.jpg",
+    imgUrl: "images/products/6.jpg",
     price: 400000,
     discription: "bh 2 năm tới t12.2023",
     address: "",
@@ -57,7 +57,7 @@ const productsDB = [
   {
     id: 7,
     name: "Latop GF63 i5 11400F",
-    imgUrl: "images/product/7.jpg",
+    imgUrl: "images/products/7.jpg",
     price: 16500000,
     discription: "card rtx 3050Ti HĐ 512GB RAM 16GB Mua đúng 1 tuần ko tg chơi",
     address: "",
@@ -66,7 +66,7 @@ const productsDB = [
   {
     id: 8,
     name: "Quạt cây",
-    imgUrl: "images/product/8.jpg",
+    imgUrl: "images/products/8.jpg",
     price: 80000,
     discription: "Quạt dùng 3 tháng",
     address: "142 Cổ Nhuế",
@@ -76,7 +76,7 @@ const productsDB = [
   {
     id: 9,
     name: "Nồi cơm điện",
-    imgUrl: "images/product/9.jpg",
+    imgUrl: "images/products/9.jpg",
     price: 100000,
     discription: "Mới dùng 1 tháng",
     address: "375 Cổ Nhuế",
@@ -86,7 +86,7 @@ const productsDB = [
   {
     id: 10,
     name: "Bộ sofa đã qua sử dụng",
-    imgUrl: "images/product/10.jpg",
+    imgUrl: "images/products/10.jpg",
     price: 750000,
     discription: "đã sử dụng 7 tháng cần pass lại cho ai cần",
     address: "Ecohome",
@@ -96,7 +96,7 @@ const productsDB = [
   {
     id: 11,
     name: "Ấm siêu tốc",
-    imgUrl: "images/product/11.jpg",
+    imgUrl: "images/products/11.jpg",
     price: 45000,
     discription: "",
     address: "46 đức thắng",
@@ -106,7 +106,7 @@ const productsDB = [
   {
     id: 12,
     name: "20 móc quần áo",
-    imgUrl: "images/product/12.jpg",
+    imgUrl: "images/products/12.jpg",
     price: 30000,
     discription: "Mới chưa qua sử dụng",
     address: "72 bờ Tây sông nhuệ",
@@ -116,7 +116,7 @@ const productsDB = [
   {
     id: 13,
     name: "Bộ bát kèm chậu",
-    imgUrl: "images/product/13.jpg",
+    imgUrl: "images/products/13.jpg",
     price: 20000,
     discription: "Chuyển trọ cần pass nhanh",
     address: "",
@@ -126,7 +126,7 @@ const productsDB = [
   {
     id: 14,
     name: "Đồ đựng rác",
-    imgUrl: "images/product/14.jpg",
+    imgUrl: "images/products/14.jpg",
     price: 10000,
     discription: "pass nhanh",
     address: "",
@@ -136,7 +136,7 @@ const productsDB = [
   {
     id: 15,
     name: "Bộ bàn ghế",
-    imgUrl: "images/product/15.jpg",
+    imgUrl: "images/products/15.jpg",
     price: 200000,
     discription: "chuyển trọ cần pass lại",
     address: "",
@@ -145,7 +145,7 @@ const productsDB = [
   {
     id: 16,
     name: "Máy giặt 8kg",
-    imgUrl: "images/product/16.jpg",
+    imgUrl: "images/products/16.jpg",
     price: 800000,
     discription: "",
     address: "",
@@ -155,7 +155,7 @@ const productsDB = [
   {
     id: 17,
     name: "Tủ lanh Beko",
-    imgUrl: "images/product/17.jpg",
+    imgUrl: "images/products/17.jpg",
     price: 100000,
     discription: "Tiết kiệm điện , mới sử dụng 3 tháng ",
     address: "Cổ nhuế",
@@ -165,7 +165,7 @@ const productsDB = [
   {
     id: 18,
     name: "Tủ lạnh sanyo 123 Lit",
-    imgUrl: "images/product/18.jpg",
+    imgUrl: "images/products/18.jpg",
     price: 1200000,
     discription: "Chuyển trọ cần pass nhanh",
     address: "Ecohome",
@@ -175,7 +175,7 @@ const productsDB = [
   {
     id: 19,
     name: "Tủ lạnh Sam.sung inverter 243l( còn bào hành hảng)",
-    imgUrl: "images/product/19.jpg",
+    imgUrl: "images/products/19.jpg",
     price: 2700000,
     discription: "Siêu tiết kiệm điện",
     address: "",
@@ -185,7 +185,7 @@ const productsDB = [
   {
     id: 20,
     name: "Máy giặt Aqua inverter 8kg",
-    imgUrl: "images/product/20.jpg",
+    imgUrl: "images/products/20.jpg",
     price: 2000000,
     discription: "máy mới dùng còn bảo hành",
     address: "",
@@ -195,7 +195,7 @@ const productsDB = [
   {
     id: 21,
     name: "Cần pass tủ lạnh",
-    imgUrl: "images/product/21.jpg",
+    imgUrl: "images/products/21.jpg",
     price: 800000,
     discription: "Chuyển trọ cần pass nhanh",
     address: "",
@@ -205,7 +205,7 @@ const productsDB = [
   {
     id: 22,
     name: "Máy giặt",
-    imgUrl: "images/product/22.jpg",
+    imgUrl: "images/products/22.jpg",
     price: 1000000,
     discription: "còn mới",
     address: "",
