@@ -1,0 +1,95 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10900;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffcc00;
+}
+.header-logo {
+  margin: 16px 52px;
+}
+.header-logo a img {
+  height: 120px;
+  border-radius: 50%;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  max-width: 800px;
+  min-width: 400px;
+}
+.header-content-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-content-nav-item {
+  margin-right: 32px;
+}
+.header-content-nav-item a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  height: 52px;
+  align-items: center;
+}
+.header-content-nav-item a .header-icon {
+  line-height: 52px;
+  font-size: 20px;
+  margin-right: 4px;
+}
+.header-content-nav-item a h4 {
+  line-height: 52px;
+  font-size: 15px;
+  margin: 0;
+}
+.header-content-search {
+  display: flex;
+  align-items: center;
+  line-height: 52px;
+}
+.header-content-search-input {
+  position: relative;
+  margin-right: 16px;
+  flex-grow: 1;
+}
+.header-content-search-input input {
+  width: 100%;
+  line-height: 32px;
+  min-width: 200px;
+  border-radius: 16px;
+  padding: 0 16px;
+}
+.header-content-search-input .search-icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 20px;
+}
+.header-content-search-login {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.header-content-search-login .header-icon {
+  font-size: 24px;
+  margin: 0 4px 4px 0;
+}
+.header-content-search-login h4 {
+  margin-top: 4px;
+  font-size: 20px;
+}
+.header-content-search-login:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(11, 170, 243);
+}
