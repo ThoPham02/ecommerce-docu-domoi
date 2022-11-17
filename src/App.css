@@ -7,3 +7,12 @@
 body {
   background-color: rgba(0,0,0,0.05);
 }
+
+.content {
+  min-height: calc(100vh - 152px - 228.8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px 0;
+}
