@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffcc00;
+  margin-top: 152px;
+}
+
+.footer-content {
+  list-style-type: none;
+}
+
+.footer-content li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-content li a:hover {
+  text-decoration: underline;
+}
