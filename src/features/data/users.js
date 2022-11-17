@@ -1,4 +1,4 @@
-const users = [
+const usersDB = [
     {
         id: 1,
         name: 'thopham',
@@ -8,3 +8,5 @@ const users = [
         address: 'Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội',
     }
 ]
+
+export default usersDB;

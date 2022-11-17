@@ -1,0 +1,28 @@
+.categories {
+  margin: 12px 0;
+  background-color: #fff;
+}
+
+.categories-title {
+  padding: 16px;
+}
+
+.categories-items {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.categories-items button {
+  border: none;
+  background-color: none;
+}
+
+.category {
+  width: 8rem;
+  border: none;
+  padding: 16px;
+  height: 200px;
+}
+
+

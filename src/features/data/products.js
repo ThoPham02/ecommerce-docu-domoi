@@ -1,4 +1,4 @@
-const products = [
+const productsDB = [
   {
     id: 1,
     name: "Samsung A33 Hàng cty",
@@ -213,4 +213,4 @@ const products = [
   },
 ];
 
-export default products;
+export default productsDB;

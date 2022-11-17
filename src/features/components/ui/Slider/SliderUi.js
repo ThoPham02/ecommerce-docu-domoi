@@ -1,9 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./SliderUi.css";
-import slider from "../../../data/slider";
+import sliderDB from "../../../data/slider";
 
 const SliderUi = () => {
-  const sliders = slider;
+  const sliders = sliderDB;
   return (
     <div>
       <Carousel fade className="slider">

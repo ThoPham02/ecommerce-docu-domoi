@@ -1,4 +1,4 @@
-const slider = [
+const sliderDB = [
     {
         title: "Bạn có đồ cũ muốn bán?",
         p: "Nhưng không có thời gian",
@@ -17,4 +17,4 @@ const slider = [
 ];
 
 
-export default slider;
+export default sliderDB;
