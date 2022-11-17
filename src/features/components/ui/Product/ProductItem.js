@@ -7,9 +7,10 @@ import numberToCurrency from "../../../utils/numberToCurrency";
 import "./ProductItem.css";
 
 const ProductItem = ({ name, imgUrl, address, id, price }) => {
+  const productId = id;
   return (
     <div className="product-item">
-      <Link to={`/product/:${id}`}>
+      <Link to={`/products/${productId}`}>
         <Card style={{ height: "394px" }}>
           <Card.Img
             variant="top"
@@ -38,6 +39,8 @@ const ProductItem = ({ name, imgUrl, address, id, price }) => {
           position: "absolute",
           bottom: "46px",
           left: "20px",
+          backgroundColor: "#ffcc00",
+          color: "#000",
         }}
       >
         Thêm vào giỏ hàng

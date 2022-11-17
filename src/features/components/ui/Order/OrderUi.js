@@ -1,4 +1,4 @@
-import 'OrderUi.css';
+import './OrderUi.css';
 
 const OrderUi = () => {
 

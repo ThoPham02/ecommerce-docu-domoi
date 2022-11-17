@@ -1,4 +1,4 @@
-import 'NotificationUi.css';
+import './NotificationUi.css';
 
 const NotificationUi = () => {
 
