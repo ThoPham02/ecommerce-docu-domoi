@@ -22,14 +22,14 @@ const HeaderUi = () => {
       <div className="header-content">
         <div className="header-content-nav">
           <div className="header-content-nav-item">
-            <Link to="/">
+            <Link to="/home">
               <AiOutlineHome className="header-icon" />
               <h4>Trang chủ</h4>
             </Link>
           </div>
 
           <div className="header-content-nav-item">
-            <Link to="/cart">
+            <Link to="/cart-list">
               <AiOutlineShoppingCart className="header-icon" />
               <h4>Giỏ hàng</h4>
             </Link>

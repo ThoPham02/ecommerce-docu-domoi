@@ -1,0 +1,21 @@
+.cart-title{
+    margin: 24px 0;
+    background-color: #fff;
+}
+
+.cart-empty {
+    height: calc(100vh - 152px - 228.8px);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cart-empty button {
+    padding: 0 12px;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.cart-empty button a {
+    color: #000;
+    text-decoration: none;
+}
