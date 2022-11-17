@@ -12,6 +12,7 @@ import "./HeaderUi.css";
 
 const HeaderUi = () => {
   return (
+    <>
     <div className="header sticky-top">
       <div className="header-logo">
         <Link to="/">
@@ -73,6 +74,8 @@ const HeaderUi = () => {
         </div>
       </div>
     </div>
+    <div style={{height: '152px'}}></div>
+    </>
   );
 };
 

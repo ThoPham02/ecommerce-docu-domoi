@@ -15,3 +15,6 @@ const slider = [
         imgUrl: "images/banners/slider3.png"
     },
 ];
+
+
+export default slider;

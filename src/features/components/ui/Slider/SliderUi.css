@@ -1,0 +1,13 @@
+.slider {
+    display: flex;
+    margin: 0 auto;
+}
+
+.slider-img {
+    height: 500px;
+    object-fit:fill;
+}
+
+.slider-header{
+    color: rgb(255, 1, 1);
+}
