@@ -2,7 +2,7 @@ import './OrderUi.css';
 
 const OrderUi = () => {
     return (
-        <div>
+        <div style={{height: "100%", backgroundColor: "red"}}>
             
         </div>
     )
