@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { BiReceipt, BiWallet } from "react-icons/bi";
 import { Link } from "react-router-dom";
-
+import logo from './logo.png';
 import "./HeaderUi.css";
 
 const HeaderUi = () => {
@@ -16,7 +16,7 @@ const HeaderUi = () => {
     <div className="header sticky-top">
       <div className="header-logo">
         <Link to="/">
-          <img src="logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
         </Link>
       </div>
       <div className="header-content">

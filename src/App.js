@@ -22,6 +22,7 @@ function App() {
       <HeaderUi />
       <div className="content" style={{ maxWidth: "1200px", margin: "0 auto", }}>
         <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/cart-list" element={<CartPage />} />
           <Route path="/products/:productId" element={<ProductDetailPage />} />

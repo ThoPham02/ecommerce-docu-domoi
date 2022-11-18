@@ -5,7 +5,6 @@ import sliderDB from "../../../data/slider";
 const SliderUi = () => {
   const sliders = sliderDB;
   return (
-    <div>
       <Carousel fade className="slider">
         {sliders.map((item) => {
           return (
@@ -23,7 +22,6 @@ const SliderUi = () => {
           );
         })}
       </Carousel>
-    </div>
   );
 };
 

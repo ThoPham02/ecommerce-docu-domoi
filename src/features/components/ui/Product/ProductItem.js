@@ -21,7 +21,7 @@ const ProductItem = ({ name, imgUrl, address, id, price }) => {
             }}
           />
           <Card.Body>
-            <Card.Title style={{ height: "48px" }}>{name}</Card.Title>
+            <Card.Title style={{ height: "48px", overflow: "hidden" }}>{name}</Card.Title>
             <Card.Title style={{ color: "red", fontSize: "16px" }}>
               <IoIosPricetags />
               {numberToCurrency(price)}
