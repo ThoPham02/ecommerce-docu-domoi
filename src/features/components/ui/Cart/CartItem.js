@@ -1,17 +1,27 @@
 import numberToCurrency from "../../../utils/numberToCurrency";
 import { Checkbox } from "antd";
+import { useDispatch } from "react-redux";
+import CartSlice from "./CartSlice";
 
-const CartItem = (cartItem) => {
+const CartItem = ({ cartItem }) => {
+  const dispatch = useDispatch();
+
+  const handleToggle = () => {
+    dispatch(CartSlice.actions.toggleItem(cartItem.productId));
+  };
+
   return (
     <>
       <tr
-        key={cartItem.id}
         style={{
           lineHeight: "140px",
         }}
       >
         <td>
-          <Checkbox></Checkbox>
+          <Checkbox
+            checked={cartItem.checked}
+            onClick={handleToggle}
+          ></Checkbox>
         </td>
         <td>
           <img
@@ -26,14 +36,15 @@ const CartItem = (cartItem) => {
         </td>
         <td>{cartItem.name}</td>
         <td>
-          <input
-            type="number"
+          <p
             style={{
               height: "24px",
               width: "48px",
               textAlign: "center",
             }}
-          ></input>
+          >
+            {cartItem.amount}
+          </p>
         </td>
         <td style={{ color: "red" }}>{numberToCurrency(cartItem.price)}</td>
         <td>

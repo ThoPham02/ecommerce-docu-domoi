@@ -4,9 +4,17 @@ import CartItem from "./CartItem";
 import { Checkbox } from "antd";
 import numberToCurrency from "../../../utils/numberToCurrency";
 import "./CartUi.css";
+import { useDispatch, useSelector } from "react-redux";
+import { CartSelector } from "../../../../app/selector";
+import CartSlice from "./CartSlice";
 
 const CartUi = () => {
-  const cartList = [];
+  const cartList = useSelector(CartSelector);
+  const dispatch = useDispatch();
+  const handleToggleAll = () => {
+    dispatch(CartSlice.actions.toggleAllItems());
+  };
+  var total = 0;
   return (
     <div className="cart">
       <div className="cart-items">
@@ -35,7 +43,12 @@ const CartUi = () => {
                 <thead>
                   <tr>
                     <th>
-                      <Checkbox></Checkbox>
+                      <Checkbox
+                        onClick={handleToggleAll}
+                        checked={cartList.every(
+                          (item) => item.checked === true
+                        )}
+                      ></Checkbox>
                     </th>
                     <th>Sản Phẩm</th>
                     <th>Tên</th>
@@ -46,7 +59,14 @@ const CartUi = () => {
                 </thead>
                 <tbody>
                   {cartList.map((item) => {
-                    return <CartItem cartItem={item} checked={item.checked} />;
+                    total += item.price * item.amount;
+                    return (
+                      <CartItem
+                        cartItem={item}
+                        checked={item.checked}
+                        key={item.productId}
+                      />
+                    );
                   })}
                 </tbody>
               </Table>
@@ -72,7 +92,7 @@ const CartUi = () => {
                   padding: "0 16px",
                 }}
               >
-                {numberToCurrency()}
+                {numberToCurrency(total)}
               </p>
               <button
                 style={{
@@ -81,7 +101,7 @@ const CartUi = () => {
                 }}
               >
                 <Link
-                  to="/pay"
+                  to="/payment"
                   style={{
                     textDecoration: "none",
                     color: "#000",

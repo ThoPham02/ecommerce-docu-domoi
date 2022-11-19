@@ -22,7 +22,7 @@ const LoginForm = () => {
     ) {
       const user = users.find((user) => user.name === name.value);
       dispatch(LoginSlice.actions.login(user));
-      navigate("/home");
+      navigate("/");
     }
   };
 

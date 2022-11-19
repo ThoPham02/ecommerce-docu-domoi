@@ -5,13 +5,13 @@
 
 .cart-empty {
     height: calc(100vh - 152px - 228.8px);
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .cart-empty button {
     padding: 0 12px;
-    background-color: aqua;
+    background-color: #ffcc00;
     border-radius: 15px;
 }
 

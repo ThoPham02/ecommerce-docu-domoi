@@ -5,9 +5,27 @@ import { ImLocation } from "react-icons/im";
 import Button from "react-bootstrap/Button";
 import numberToCurrency from "../../../utils/numberToCurrency";
 import "./ProductItem.css";
+import { useDispatch, useSelector } from "react-redux";
+import CartSlice from "../Cart/CartSlice";
+import { AuthSelector } from "../../../../app/selector";
 
 const ProductItem = ({ name, imgUrl, address, id, price }) => {
   const productId = id;
+  const dispatch = useDispatch();
+  const cartItem = {
+    productId: productId,
+    name: name,
+    imgUrl: imgUrl,
+    address: address,
+    amount: 1,
+    price: price,
+    checked: true,
+    userId: useSelector(AuthSelector).id,
+  };
+  const handleClick = () => {
+    dispatch(CartSlice.actions.addItem(cartItem));
+  };
+
   return (
     <div className="product-item">
       <Link to={`/products/${productId}`}>
@@ -21,7 +39,9 @@ const ProductItem = ({ name, imgUrl, address, id, price }) => {
             }}
           />
           <Card.Body>
-            <Card.Title style={{ height: "48px", overflow: "hidden" }}>{name}</Card.Title>
+            <Card.Title style={{ height: "48px", overflow: "hidden" }}>
+              {name}
+            </Card.Title>
             <Card.Title style={{ color: "red", fontSize: "16px" }}>
               <IoIosPricetags />
               {numberToCurrency(price)}
@@ -42,6 +62,7 @@ const ProductItem = ({ name, imgUrl, address, id, price }) => {
           backgroundColor: "#ffcc00",
           color: "#000",
         }}
+        onClick={handleClick}
       >
         Thêm vào giỏ hàng
       </Button>

@@ -29,6 +29,7 @@ const RegisterForm = () => {
         address: "",
       };
       dispatch(RegisterSlice.actions.register(user));
+      console.log(users);
       dispatch(LoginSlice.actions.login(user));
       navigate("/home");
     }
