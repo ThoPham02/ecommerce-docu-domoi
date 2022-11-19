@@ -1,6 +1,36 @@
+import { useId } from "react";
 import Table from "react-bootstrap/Table";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { CartSelector } from "../../../../app/selector";
+import numberToCurrency from "../../../utils/numberToCurrency";
+import CartSlice from "../../ui/Cart/CartSlice";
+import OrderSlice from "../../ui/Order/OrderSlice";
 
 const PaymentForm = () => {
+  const cartChecked = useSelector(CartSelector).filter(
+    (item) => item.checked === true
+  );
+  const dispatch = useDispatch();
+  var total = 0;
+  const shipping =
+    Math.floor(Math.random() * 350 + 150) * cartChecked.length * 100;
+  const orderBuyId = useId();
+  const navigate = useNavigate();
+  const handleClick = () => {
+    const orderBuy = {
+      id: orderBuyId,
+      cart: cartChecked,
+      shipping: shipping,
+      total: total,
+      status: 1,
+    };
+    dispatch(OrderSlice.actions.addOrderBuy(orderBuy));
+    cartChecked.forEach((item) => {
+      dispatch(CartSlice.actions.deleteItem(item.productId));
+    });
+    navigate('/order')
+  };
   return (
     <div className="pay-form">
       <div
@@ -31,12 +61,17 @@ const PaymentForm = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
+            {cartChecked.map((item) => {
+              total += item.price * item.amount;
+              return (
+                <tr key={item.productId}>
+                  <td>{item.name}</td>
+                  <td>{numberToCurrency(item.price)}</td>
+                  <td>{item.amount}</td>
+                  <td>{numberToCurrency(item.price * item.amount)}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </Table>
 
@@ -87,7 +122,7 @@ const PaymentForm = () => {
             >
               THAY ĐỔI
             </button>
-            <label>50.000đ</label>
+            <label>{numberToCurrency(shipping)}</label>
           </div>
         </div>
         <div
@@ -100,8 +135,10 @@ const PaymentForm = () => {
             backgroundColor: "#fff",
           }}
         >
-          <label>Tổng số tiền: </label>
-          <h5 style={{ color: "red", padding: "4px 24px 0" }}>70.000.000đ</h5>
+          <label>Tổng tiền hàng: </label>
+          <h5 style={{ color: "red", padding: "4px 24px 0" }}>
+            {numberToCurrency(total)}
+          </h5>
         </div>
       </div>
 
@@ -139,15 +176,15 @@ const PaymentForm = () => {
           <div className="col-4">
             <div className="row">
               <div className="col-6">Tổng tiền hàng: </div>
-              <div className="col-6">70.000.000đ</div>
+              <div className="col-6">{numberToCurrency(total)}</div>
             </div>
             <div className="row">
               <div className="col-6">Phí vận chuyển: </div>
-              <div className="col-6">50.000đ</div>
+              <div className="col-6">{numberToCurrency(shipping)}</div>
             </div>
             <div className="row">
               <div className="col-6">Tổng thanh toán: </div>
-              <div className="col-6">70.050.000đ</div>
+              <div className="col-6">{numberToCurrency(total + shipping)}</div>
             </div>
           </div>
         </div>
@@ -174,6 +211,7 @@ const PaymentForm = () => {
             backgroundColor: "aqua",
             marginRight: "36px",
           }}
+          onClick={handleClick}
         >
           Đặt hàng
         </button>

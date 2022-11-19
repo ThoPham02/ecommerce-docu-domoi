@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const SaleSlice = createSlice({
-    name: "sale",
+    name: "orderSale",
     initialState: [],
     reducers: {
         addProduct: (state, { payload }) => {

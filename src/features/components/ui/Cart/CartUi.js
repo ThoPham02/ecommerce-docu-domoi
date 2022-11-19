@@ -59,7 +59,9 @@ const CartUi = () => {
                 </thead>
                 <tbody>
                   {cartList.map((item) => {
-                    total += item.price * item.amount;
+                    if (item.checked === true) {
+                      total += item.price * item.amount;
+                    }
                     return (
                       <CartItem
                         cartItem={item}
@@ -83,7 +85,7 @@ const CartUi = () => {
                 bottom: "0",
               }}
             >
-              <h3>Tổng thanh toán: </h3>
+              <h4>Tổng tiền hàng: </h4>
               <p
                 style={{
                   color: "red",
