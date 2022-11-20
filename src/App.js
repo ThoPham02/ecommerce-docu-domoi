@@ -15,6 +15,7 @@ import PaymentPage from "./features/pages/Payment";
 import ProductDetailPage from "./features/pages/ProductDetail";
 import RegisterPage from "./features/pages/Register";
 import SalePage from "./features/pages/Sale";
+import SaleManagePage from "./features/pages/SaleMange";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/account" element={<AccountPage />} />
           <Route path="/notification" element={<NotificationPage />} />
           <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/sale-manage" element={<SaleManagePage />} />
           <Route path="*" element={<ErrorPage />} />
 
         </Routes>

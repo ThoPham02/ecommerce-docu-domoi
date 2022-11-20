@@ -4,12 +4,12 @@ import LoginForm from "../components/form/Login/LoginForm";
 import CartUi from "../components/ui/Cart/CartUi";
 
 const CartPage = () => {
-  const userLogin = useSelector(AuthSelector)
+  const userLogin = useSelector(AuthSelector);
 
-  if (userLogin.name) {
-    return <CartUi />
+  if (!userLogin.name) {
+    return <LoginForm />;
   }
-  return <LoginForm />
+  return <CartUi />;
 };
 
 export default CartPage;

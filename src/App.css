@@ -12,3 +12,6 @@ body {
   min-height: calc(100vh - 152px - 228.8px);
   padding: 12px 0;
 }
+.money {
+  color: red;
+}

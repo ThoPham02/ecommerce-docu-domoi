@@ -1,15 +1,15 @@
 import { useSelector } from "react-redux";
 import { AuthSelector } from "../../app/selector";
 import LoginForm from "../components/form/Login/LoginForm";
-import PaymentForm from "../components/form/Payment/PaymentForm";
+import SaleManageUi from "../components/ui/SaleManage/SaleManageUi";
 
-const PaymentPage = () => {
+const SaleManagePage = () => {
   const userLogin = useSelector(AuthSelector);
 
   if (!userLogin.name) {
     return <LoginForm />;
   }
-  return <PaymentForm />;
+  return <SaleManageUi />;
 };
 
-export default PaymentPage;
+export default SaleManagePage;

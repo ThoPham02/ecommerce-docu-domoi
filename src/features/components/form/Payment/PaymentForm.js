@@ -24,6 +24,7 @@ const PaymentForm = () => {
       shipping: shipping,
       total: total,
       status: 1,
+      payment: "BIDV",
     };
     dispatch(OrderSlice.actions.addOrderBuy(orderBuy));
     cartChecked.forEach((item) => {
@@ -170,6 +171,14 @@ const PaymentForm = () => {
           }}
         >
           <label>Chọn thẻ: </label>
+          <select style={{margin: "0 24px"}}>
+            <option value="BIDV">BIDV</option>
+            <option value="Agribank">Agribank</option>
+            <option value="CB">CB</option>
+            <option value="Oceanbank">Oceanbank</option>
+            <option value="GPBank">GPBank</option>
+            <option value="Vietcombank">Vietcombank</option>
+          </select>
         </div>
         <div className="row" style={{ padding: "12px" }}>
           <div className="col-8"></div>

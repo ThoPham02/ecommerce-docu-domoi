@@ -7,6 +7,9 @@ const productsDB = [
     discription: "Máy zin",
     address: "Nam Từ Liêm",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 1,
   },
   {
     id: 2,
@@ -16,6 +19,9 @@ const productsDB = [
     discription: "Máy đẹp zin pin 90%",
     address: "Nam Từ Liêm",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 2,
   },
   {
     id: 3,
@@ -25,6 +31,9 @@ const productsDB = [
     discription: "màu trắng zin đẹp pin 94%",
     address: "",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 3,
   },
   {
     id: 4,
@@ -34,6 +43,9 @@ const productsDB = [
     discription: "lock face đầy đủ pin zin 84%",
     address: "",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 4,
   },
   {
     id: 5,
@@ -44,6 +56,9 @@ const productsDB = [
       "Màu Vàng , vỏ đẹp , bộ nhớ 128gb , Pin 100% về chỉ viêc cắm sim dùng có sạc",
     address: "",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 5,
   },
   {
     id: 6,
@@ -53,6 +68,9 @@ const productsDB = [
     discription: "bh 2 năm tới t12.2023",
     address: "",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 6,
   },
   {
     id: 7,
@@ -62,6 +80,9 @@ const productsDB = [
     discription: "card rtx 3050Ti HĐ 512GB RAM 16GB Mua đúng 1 tuần ko tg chơi",
     address: "",
     tag: 1,
+    amount: 1,
+    status: "Đang bán",
+    userId: 7,
   },
   {
     id: 8,
@@ -71,6 +92,9 @@ const productsDB = [
     discription: "Quạt dùng 3 tháng",
     address: "142 Cổ Nhuế",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 8,
   },
 
   {
@@ -81,6 +105,9 @@ const productsDB = [
     discription: "Mới dùng 1 tháng",
     address: "375 Cổ Nhuế",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 9,
   },
 
   {
@@ -91,6 +118,9 @@ const productsDB = [
     discription: "đã sử dụng 7 tháng cần pass lại cho ai cần",
     address: "Ecohome",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 10,
   },
 
   {
@@ -101,6 +131,9 @@ const productsDB = [
     discription: "",
     address: "46 đức thắng",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 1,
   },
 
   {
@@ -111,6 +144,9 @@ const productsDB = [
     discription: "Mới chưa qua sử dụng",
     address: "72 bờ Tây sông nhuệ",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 11,
   },
 
   {
@@ -121,6 +157,9 @@ const productsDB = [
     discription: "Chuyển trọ cần pass nhanh",
     address: "",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 12,
   },
 
   {
@@ -131,6 +170,9 @@ const productsDB = [
     discription: "pass nhanh",
     address: "",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 13,
   },
 
   {
@@ -141,6 +183,9 @@ const productsDB = [
     discription: "chuyển trọ cần pass lại",
     address: "",
     tag: 2,
+    amount: 1,
+    status: "Đang bán",
+    userId: 14,
   },
   {
     id: 16,
@@ -150,6 +195,9 @@ const productsDB = [
     discription: "",
     address: "",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 15,
   },
 
   {
@@ -160,6 +208,9 @@ const productsDB = [
     discription: "Tiết kiệm điện , mới sử dụng 3 tháng ",
     address: "Cổ nhuế",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 16,
   },
 
   {
@@ -170,6 +221,9 @@ const productsDB = [
     discription: "Chuyển trọ cần pass nhanh",
     address: "Ecohome",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 17,
   },
 
   {
@@ -180,6 +234,9 @@ const productsDB = [
     discription: "Siêu tiết kiệm điện",
     address: "",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 18,
   },
 
   {
@@ -190,6 +247,9 @@ const productsDB = [
     discription: "máy mới dùng còn bảo hành",
     address: "",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 19,
   },
 
   {
@@ -200,6 +260,9 @@ const productsDB = [
     discription: "Chuyển trọ cần pass nhanh",
     address: "",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 20,
   },
 
   {
@@ -210,6 +273,9 @@ const productsDB = [
     discription: "còn mới",
     address: "",
     tag: 3,
+    amount: 1,
+    status: "Đang bán",
+    userId: 21,
   },
 ];
 

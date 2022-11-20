@@ -8,7 +8,8 @@ import { Button } from "react-bootstrap";
 
 const ProductDetailUi = () => {
   const { productId } = useParams();
-  const product = productsDB.find((item) => item.id == productId); // eslint-disable-next-line
+  // eslint-disable-next-line
+  const product = productsDB.find((item) => item.id == productId); 
   console.log(product);
 
   return (

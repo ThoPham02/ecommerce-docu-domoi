@@ -1,7 +1,10 @@
 import { AiOutlineUser } from "react-icons/ai";
+import { useSelector } from "react-redux";
+import { AuthSelector } from "../../../../app/selector";
 import "./AccountUi.css";
 
 const AccountUi = () => {
+  const account = useSelector(AuthSelector)
   return (
     <>
       <div className="row" style={{ backgroundColor: "#fff" }}>
@@ -19,15 +22,15 @@ const AccountUi = () => {
         <div className="col-7">
           <div className="row info-item">
             <div className="col-3">Tên đăng nhập</div>
-            <div className="col-9"></div>
+            <div className="col-9">{account.name}</div>
           </div>
           <div className="row info-item">
             <div className="col-3">Email</div>
-            <div className="col-9"></div>
+            <div className="col-9">{account.email}</div>
           </div>
           <div className="row info-item">
             <div className="col-3">Số điện thoại</div>
-            <div className="col-9"></div>
+            <div className="col-9">{account.phone}</div>
           </div>
           <div className="row info-item">
             <div className="col-3"></div>
