@@ -1,5 +1,8 @@
 import { useSelector } from "react-redux";
-import { ProductFilterSelector, ProductSelector } from "../../../../app/selector";
+import {
+  ProductFilterSelector,
+  ProductSelector,
+} from "../../../../app/selector";
 import ProductItem from "./ProductItem";
 const ProductUi = () => {
   const productsSelector = useSelector(ProductSelector);
@@ -16,7 +19,8 @@ const ProductUi = () => {
         className="row"
         style={{ backgroundColor: "#fff", margin: "16px 0", padding: "12px 0" }}
       >
-        <h3>Tất cả sản phẩm</h3>
+        {" "}
+        {filter.tag === "" ? <h3>Tất cả sản phẩm</h3> : <h3>{filter.tag}</h3>}
       </div>
       <div
         style={{
